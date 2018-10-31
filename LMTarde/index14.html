@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index14</title>
+	<style type="text/css">
+		
+		 table, th, td,tr{
+			border:1px solid blue;
+			border-collapse: collapse;
+			padding: 25px;
+		}
+
+		
+		/*
+		table#paises tr:nth-child(even) {
+    		background-color: #eee;
+		}
+		table#paises tr:nth-child(odd) {
+    		background-color: #fff;
+		}*/
+
+		thead.encabezadopaises {
+			background-color: yellow;
+		}
+		tbody.cuerpotablapaises {
+			background-color: green;
+		}
+		tbody.cuerpotablapaises tr:nth-child(even) {
+    		background-color: #eee;}
+
+    	tbody.cuerpotablapaises tr:nth-child(odd) {
+    		background-color: #fff;}
+
+
+		tfoot.pietablapaises {
+			background-color: white;
+			color:black;
+			border-bottom: 0px; 
+		}
+
+		tr#ultimafila {
+			border-bottom: 0px;
+		}
+		td.ultimacolumna{
+			border-bottom: 0px;
+		}
+		table#paises {
+			border-bottom: 0px;
+		}
+
+
+	</style>
+
+</head>
+<body>
+	<table id="paises" align="center">
+		<caption>Tabla de Paises</caption>		
+			<thead class="encabezadopaises">
+				<tr>
+					<th colspan="3">Paises</th>
+				</tr>
+				<tr>
+					<th>País</th>
+					<th>Población</th>
+					<th>m<sup>2</sup></th>
+				</tr>
+			</thead>
+			<tbody class="cuerpotablapaises">
+				<tr>
+					<td>España</td>
+					<td>44000000</td>
+					<td>ni idea</td>
+				</tr>
+				<tr>
+					<td>Alemania</td>
+					<td>80000000</td>
+					<td>ni idea</td>
+				</tr>
+				<tr>
+					<td>Francia</td>
+					<td>65000000</td>
+					<td>ni idea</td>
+				</tr>
+				<tr>
+					<td>RU</td>
+					<td>65000000</td>
+					<td>ni idea</td>
+				</tr>
+			</tbody>
+			<tfoot class="pietablapaises">
+				<tr id="ultimafila">
+					<td class="ultimacolumna">Total</td>
+					<td class="ultimacolumna">190000000</td>
+					<td class="ultimacolumna">ni idea</td>
+				</tr>
+			</tfoot>
+		
+
+	</table>
+
+</body>
+</html>

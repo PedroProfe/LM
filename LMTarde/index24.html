@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index24</title>
+	<script type="text/javascript">
+		function saluda()
+		{
+			alert("Hola");
+		}
+		function poncolor()
+		{
+			document.getElementsByID("validar").style.background-color:red";
+			
+		}
+	</script>
+</head>
+<body>
+
+	<h1>Registrar</h1>
+
+	<form action="" method="get">
+		Nombre:<br/>
+		<input type="text" name="nombre">
+		<br/>
+		Apellido:<br/>
+		<input type="text" name="apellido">
+		<br/>
+		Clave:</br>
+		<input type="password" name="clave">
+		<br/>
+		Rellenar por la administración:<br/>
+		<input type="text" readonly="true" style="background-color: grey;">
+
+		<h4>Sexo</h4>
+		
+		Hombre: <input type="radio" name="sexo" id="hombre" checked="true">
+		<br/>
+		Mujer: <input type="radio" name="sexo" id="mujer">
+		<br/>
+		<br/>
+
+		<fieldset name="caracteristicas">
+			<legend>Características Físicas</legend>
+			Alto/a:<input type="checkbox" name="altura" checked="true">
+			<br/>
+			Delgado/a:<input type="checkbox" name="delgado">
+			<br/>
+			Moreno/a:<input type="checkbox" name="moreno">
+		</fieldset>
+		<br/>
+		<br/>
+
+		Seleccione CV:<input type="file" name="seleccione un fichero">
+		<br/>
+		<br/>
+		Edad:
+		<select name="edad">
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+		</select>
+
+		Provincias en las que ha vivido:
+		<select name="provincia" multiple="true" size="3">
+			<option value="albacete">Albacete</option>
+			<option value="alava">Alava</option>
+			<option value="burgos">Burgos</option>
+			<option value="caceres">Caceres</option>
+			<option value="madrid">Madrid</option>
+			<option value="guipuzcoa">Guipuzcoa</option>
+		</select>
+		<br/>
+		<br/>
+		<h4>Navegadores:</h4>
+		 <input list="navegadores">
+		  <datalist id="navegadores">
+		    <option value="Internet Explorer">
+		    <option value="Firefox">
+		    <option value="Chrome">
+		    <option value="Opera">
+		    <option value="Safari">
+		  </datalist> 
+		  <br/>
+		  <br/>
+		  Seleccione el color:<br/><br/>
+		  Rojo:<br/>
+		  <input type="range" id="rojo" value="50" onclick="poncolor()">
+		  <br/>
+		  Verde:<br/>
+		  <input type="range" id="verde" value="50" onscroll="poncolor()">
+		  <br/>
+		  Azúl:<br/>
+		  <input type="range" id="azúl" value="50" onscroll="poncolor()">
+
+
+
+		<h4>Religión</h4>
+		
+		Cristiano: <input type="radio" name="religion">
+		<br/>
+		Judio: <input type="radio" name="religion">
+		<br/>
+		<br/>
+
+		Introduzca su valoración:
+		<br/>
+		<textarea rows="10" cols="25">Introduzca su opinión			
+		</textarea>
+		<br/>
+		<br/>
+
+		<input type="submit" value="aceptar">
+		<input type="button" value="validar" onclick="saluda()" id="validar">
+		<input type="reset"  value="borrar">
+
+
+
+	</form>
+
+</body>
+</html>
