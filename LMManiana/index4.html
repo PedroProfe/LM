@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index4</title>
+	<style type="text/css">
+		table, td, th, tr {border:2px solid blue}
+		th, td {padding: 20px}
+		th {text-align: left}
+		table {border-spacing:15px }
+
+		table#tablapaises{
+			border:0;
+			border-spacing: 0px;
+		}
+
+		table#tablapaises tr:nth-child(even){
+			background-color: red;
+		}
+
+		table#tablapaises tr:nth-child(odd){
+			background-color: blue;
+		}
+		
+		tr.filastablapaises{
+			border:2px solid blue;
+
+		}
+		th.encabezadostablapaises{
+			padding:0px;
+			text-align: left;
+			border-left:0px;
+		}
+		th.encabezadostoptablapaises{
+			text-align: center;
+			border-top:0px;
+		}
+		th#encabezadosinnada{
+			border:0px;			
+		}
+	
+	</style>
+</head>
+<body>
+
+<table style="width:100%" align="center">
+	<tr>
+		<th>asdfaasdfasdfasdfsadfasdf</th>
+		<th colspan="3">hola</th>		
+	</tr>
+	<tr>
+		<td rowspan="2">asdfa</td>	
+		<td>asdfa</td>
+		<td colspan="2">asdfa</td>	
+	</tr>
+	<tr>
+		<td>asdfa</td>
+		<td>asdfa</td>
+		<td>asdfa</td>
+	</tr>
+</table>
+<br/>
+<br/>
+<table id="tablapaises" align="center">
+	<caption>Tabla de paises</caption>
+	<tr class="filastablapaises">
+		<th id="encabezadosinnada"></th>
+		<th class="encabezadostoptablapaises">Población</th>
+		<th class="encabezadostoptablapaises">PIB</th>
+		<th class="encabezadostoptablapaises">m<sup>2</sup></th>
+	</tr>
+	<tr class="filastablapaises">
+		<th class="encabezadostablapaises">Alemania</th>
+		<td>80000000</td>
+		<td>4500 Millones de €</td>
+		<td>ni idea</td>
+	</tr>
+	<tr class="filastablapaises">
+		<th class="encabezadostablapaises">Francia</th>
+		<td>70000000</td>
+		<td>2600 Millones de €</td>
+		<td>sdafsaf</td>
+	</tr>
+	<tr class="filastablapaises">
+		<th class="encabezadostablapaises">España</th>
+		<td>45000000</td>
+		<td>1400 Millones de €</td>
+		<td>asdfsadf</td>
+	</tr>
+</table>
+
+</body>
+</html>
