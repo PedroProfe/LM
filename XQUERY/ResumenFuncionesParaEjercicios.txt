@@ -1,7 +1,0 @@
-contains(elementoxml,'texto')
-count(...)
-avg(..) --> devuelve la media
-concat(denominacion," ",precio) --> concatena cadenas
-max(..) --> Devuelve el valor máximo
-min(..) --> Devuelve el valor mínimo
-sum(..) --> Devuelve la suma del parámetro introducido
