@@ -1,0 +1,43 @@
+body{
+	background-color: lightblue;
+}
+
+h1#titulo_principal
+{
+	background-color: orange;
+	border: 2px solid blue;
+	font-size: 1.4em;
+	padding: 10px;
+	text-align: center;
+	color:white;
+}
+h2.subtitulo, p.subtitulo{
+	background-color: pink;
+	border:2px solid white;
+
+}
+
+p.parrafo{
+	text-align: justify;
+	background-color: lightgreen;
+	border:2px solid red;
+	padding-left: 1.2em;
+	padding-right: 1.2em;
+}
+
+h3.subtitulo{
+	color:green;
+}
+
+span{
+	background-color: yellow;
+	color:blue;
+	padding: 10px;
+}
+
+p.subtitulo2 span{
+	background-color: orange;
+	color:white;
+	padding: 5px;
+}
+
